@@ -4,12 +4,64 @@
   --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif,
     "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
+/*      ╭──────────────────────────────────────────────────────────╮      */
+/*                              fonts                                   */
+/*      ╰──────────────────────────────────────────────────────────╯      */
+@font-face {
+  font-family: 'SilkRemington';
+  src: url('/fonts/SilkRemington-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'SilkRemington-RRough';
+  src: url('/fonts/SilkRemington-RRough.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'SilkRemington-Bold';
+  src: url('/fonts/SilkRemington-Bold.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'SilkRemington-Thin';
+  src: url('/fonts/SilkRemington-Thin.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'SilkRemington-BRough';
+  src: url('/fonts/SilkRemington-BRough.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'La Machine Company';
+  src: url('/fonts/La Machine Company.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
 
 html,
 body {
-  @apply bg-white dark:bg-gray-950;
+  @apply bg-white dark:bg-[#161616];
 
   @media (prefers-color-scheme: dark) {
     color-scheme: dark;
   }
+  color: #E1E1E1;
+  font-family: "Special Elite", system-ui;
 }
+
+body {
+	overflow-x: hidden;
+}
+
