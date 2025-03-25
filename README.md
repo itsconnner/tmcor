@@ -1,3 +1,3 @@
-# This is a fan made website !
+# This is a fan creation!
 
-Visual Novel ❤️ official website.
+ Honkai Star Rail-related visual novel❤️ website.
