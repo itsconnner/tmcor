@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { C } from '~/utils/C';
+import C from '~/utils/C';
 
 function Logo({ scale = 1, className }) {
     return (
