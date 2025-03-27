@@ -10,8 +10,8 @@ export default function Game(){
         </div>
         <div className='flex w-3/5 gap-8' >
             <img src="demo-art-1.png" alt="game screen shot" className='aspect-16/9 object-cover'/>
-            <img src="demo-art-2.png" alt="game screen shot" className='aspect-16/9 object-cover'/>
-            <img src="demo-art-3.png" alt="game screen shot" className='aspect-16/9 object-cover'/>
+            {/*<img src="demo-art-2.png" alt="game screen shot" className='aspect-16/9 object-cover'/>*/}
+            {/*<img src="demo-art-3.png" alt="game screen shot" className='aspect-16/9 object-cover'/>*/}
         </div>
         </div>
     </section>);

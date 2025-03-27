@@ -77,7 +77,7 @@ return (
         <video ref={video} src="hero.mp4"
                className='absolute w-full h-full
                           -top-[110px] -left-[260px] object-cover'
-               muted loop playsInline/>
+               autoPlay muted loop playsInline/>
       </div>
     </div>
   </section>
