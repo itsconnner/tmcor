@@ -44,13 +44,21 @@ export default function Hero() {
         mask.current.style.setProperty('--scroll-opacity', y * 2);
     }
 
+    function relocate_video()
+    {
+        cursor.current.x = 0;
+        cursor.current.y = 0;
+    }
+
     useEffect(() => {
         window.addEventListener('mousemove', sync_cur_pos);
         window.addEventListener('scroll', fade_video);
+        window.addEventListener('resize', relocate_video);
 
         return () => {
             window.removeEventListener('mousemove', sync_cur_pos);
             window.removeEventListener('scroll', fade_video);
+            window.removeEventListener('resize', relocate_video);
         }
     }, []);
 
