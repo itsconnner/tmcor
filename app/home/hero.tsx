@@ -18,7 +18,11 @@ export default function Hero() {
         video.current.style.transform = `translate3d(${x}px, ${y}px, 0)`;
     });
 
-    function sync_cur_pos(e: MouseEvent) {
+    function sync_cur_pos(e: PointerEvent)
+    {
+	if (e.pointerType != "mouse")
+		return;
+
         const pos = container.current.getBoundingClientRect();
 
         if (e.clientY > pos.bottom)
@@ -51,12 +55,12 @@ export default function Hero() {
     }
 
     useEffect(() => {
-        window.addEventListener('mousemove', sync_cur_pos);
+        window.addEventListener('pointermove', sync_cur_pos);
         window.addEventListener('scroll', fade_video);
         window.addEventListener('resize', relocate_video);
 
         return () => {
-            window.removeEventListener('mousemove', sync_cur_pos);
+            window.removeEventListener('pointermove', sync_cur_pos);
             window.removeEventListener('scroll', fade_video);
             window.removeEventListener('resize', relocate_video);
         }
