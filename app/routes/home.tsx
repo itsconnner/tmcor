@@ -1,3 +1,8 @@
+/* SPDX-License-Identifier: GPL-3.0-or-later */
+/*
+ * Copyright 2025 Yeyang Wang <autumnlikegirl@gmail.com>
+ */
+
 import type { Route } from "./+types/home";
 import Hero from "~/home/hero";
 import Intro from "~/home/intro";
