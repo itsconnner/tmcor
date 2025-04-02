@@ -33,12 +33,12 @@ export default function Video(){
                     <g filter="url(#filter1_d_381_9653)">
                         <path
                             d="M149 452.385C318.667 419.385 718.7 363.285 961.5 402.885C1204.3 442.485 1112 452.385 1035.5 452.385C903 444.218 592.8 448.385 412 530.385C186 632.885 1003 448.385 1314.5 509.885"
-                            stroke="white" stroke-width="9" stroke-linecap="round"/>
+                            stroke="white" strokeWidth="9" strokeLinecap="round"/>
                     </g>
                     <defs>
                         <filter id="filter0_d_381_9653" x="4.92285" y="142.388" width="1334.37" height="248.031"
-                                filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-                            <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                                filterUnits="userSpaceOnUse" colorInterpolationFilters="sRGB">
+                            <feFlood floodOpacity="0" result="BackgroundImageFix"/>
                             <feColorMatrix in="SourceAlpha" type="matrix"
                                            values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
                             <feOffset dy="10"/>
@@ -48,8 +48,8 @@ export default function Video(){
                             <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_381_9653" result="shape"/>
                         </filter>
                         <filter id="filter1_d_381_9653" x="144.499" y="384.765" width="1174.5" height="193.791"
-                                filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-                            <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                                filterUnits="userSpaceOnUse" colorInterpolationFilters="sRGB">
+                            <feFlood floodOpacity="0" result="BackgroundImageFix"/>
                             <feColorMatrix in="SourceAlpha" type="matrix"
                                            values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
                             <feOffset dy="12"/>
