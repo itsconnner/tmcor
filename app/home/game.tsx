@@ -9,8 +9,8 @@ import { Autoplay, Navigation } from 'swiper/modules';
 
 export default function Game(){
 
-    return (<section className='h-auto flex mx-10 mb-40' >
-        <div className='flex-col w-full gap-2'>
+    return (<section className='container mx-auto min-h-max xl:h-screen flex' >
+        <div className='w-full py-20'>
 
             <div className='w-full flex justify-center'>
                 <h1 className='font-[La_Machine_Company] text-3xl md:text-6xl mb-5 md:mb-10 xl:mb-15'>Media Gallery</h1>

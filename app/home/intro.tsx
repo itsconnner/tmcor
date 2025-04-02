@@ -2,16 +2,17 @@
 export default function Intro()
 {
     return (
-        <section className='container mx-auto md:h-screen min-h-screen w-full'>
+        <section className='container mx-auto xl:h-screen min-h-screen w-full'>
 
             <div className='h-full flex flex-col
                             xl:flex-row justify-center items-center gap-y-10
-                            md:gap-y-20 gap-x-40'>
+                            md:gap-y-20 gap-x-20'>
 
-                <div className='relative w-4/7 md:w-1/2 xl:w-5/7 mt-10
-                                 md:mt-0 pointer-events-none select-none'>
+                <div className='relative w-1/2 xl:w-full flex justify-center
+                                mt-20 mb-10 xl:my-0 pointer-events-none select-none'>
 
-                    <div className='absolute bottom-0 -right-14 md:-right-24 xl:-right-39 w-1/2 z-1'>
+                    <div className='absolute bottom-0 -right-2/7
+                                    xl:right-0 w-3/5 xl:w-1/3 z-1'>
                         <img src='stamp.png' alt='stamp art'/>
                     </div>
 

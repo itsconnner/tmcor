@@ -1,8 +1,6 @@
 
 import { useState } from 'react';
 import heroFilter from '~/home/Filter';
-// import { useScramble } from "use-scramble";
-
 
 export default function Header() {
     const [open, set_open] = useState(0);
