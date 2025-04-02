@@ -1,0 +1,15 @@
+.trailer-enter {
+	opacity: 0;
+}
+
+.trailer-exit {
+	opacity: 1;
+}
+
+.trailer-enter-active {
+	opacity: 1;
+}
+
+.trailer-exit-active {
+	opacity: 0;
+}

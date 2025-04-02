@@ -1,5 +1,3 @@
-
-import type { Route } from "./+types/home";
 import Hero from "~/home/hero";
 import Intro from "~/home/intro";
 import Game from "~/home/game";
