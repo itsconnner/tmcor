@@ -3,7 +3,9 @@ import { useEffect, useRef } from "react";
 import useAnimationFrame from "~/hooks/useAnimationFrame";
 
 export default function Hero() {
+    /*mouse position*/
     const cursor = useRef({ x: 0, y: 0 });
+    // offset
     const offset = useRef({ x: 0, y: 0 });
     const video : any = useRef(null);
     const mask : any = useRef(null);
@@ -77,7 +79,7 @@ return (
                       opacity-(--scroll-opacity) duration-300 ease-linear'/>
       <div className='relative h-[calc(100%+220px)]
                       w-[calc(100%+520px)] bg-black'>
-        <video ref={video} src="placeholder.mp4"
+        <video ref={video} src="header.mp4"
                className='absolute w-full h-full
                           -top-[110px] -left-[260px] object-cover'
                autoPlay muted loop playsInline/>

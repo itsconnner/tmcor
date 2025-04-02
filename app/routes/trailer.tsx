@@ -1,5 +1,5 @@
 import { useRef, useState } from "react";
-import { Link } from "react-router";
+import { Link, useNavigate } from "react-router";
 import { SwitchTransition, CSSTransition } from "react-transition-group";
 import '~/trailer.css'
 
@@ -27,6 +27,7 @@ export default function Trailer() {
 	const video = useRef(null);
 	const icon = useRef(null);
 	const [ muted, set_muted ] = useState(1);
+    const navigate = useNavigate();
 
 	function toggle_muted()
 	{
@@ -36,6 +37,11 @@ export default function Trailer() {
 			return !prev;
 		});
 	}
+
+    function redir()
+    {
+        navigate('/home', { replace: true });
+    }
 
 return(
 <main className='relative w-screen h-screen'>
@@ -53,7 +59,7 @@ return(
     </SwitchTransition>
   </button>
   <Link className='block w-full h-full' to='/home' replace viewTransition prefetch='render'>
-    <video ref={video} src='/placeholder.mp4' className='w-full h-full object-cover' autoPlay muted loop playsInline/>
+    <video ref={video}  onEnded={redir} src='trailer.mp4' className='w-full h-full object-cover' autoPlay muted playsInline/>
   </Link>
 </main>
 );
