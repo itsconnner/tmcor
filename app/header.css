@@ -1,0 +1,22 @@
+ul.menu-enter-active > li,
+ul.menu-enter-done > li {
+	opacity: 1;
+	transform: translateY(0);
+}
+
+ul.menu-exit > li,
+ul.menu-exit-active > li {
+	opacity: 0;
+	transform: translateY(-2.5rem);
+}
+
+div.mask-enter-active,
+div.mask-enter-done{
+	background-color: rgb(2 4 9 / 0.8);
+}
+
+div.mask-exit,
+div.mask-exit-active{
+	touch-action: none;
+	background-color: transparent;
+}
