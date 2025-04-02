@@ -1,8 +1,6 @@
-# SPDX-License-Identifier: GPL-3.0-or-later
-
 .DS_Store
 /node_modules/
-/format-patch.ps1
+
 # React Router
 /.react-router/
 /build/

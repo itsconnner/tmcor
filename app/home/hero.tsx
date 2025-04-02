@@ -1,8 +1,3 @@
-/* SPDX-License-Identifier: GPL-3.0-or-later */
-/*
- * Copyright 2025 Yeyang Wang <autumnlikegirl@gmail.com>
- * With contributions from Jiamu Sun <barroit@linux.com>
- */
 
 import { useEffect, useRef } from "react";
 import useAnimationFrame from "~/hooks/useAnimationFrame";
@@ -74,17 +69,20 @@ export default function Hero() {
 
 return (
   <section className='h-screen w-screen touch-pan-y'>
+
     <div ref={container} className='h-full w-full bg-black overflow-hidden'>
+
       <div ref={mask} style={{ '--scroll-opacity': 0 }}
            className='absolute bottom-0 h-full w-full z-1 bg-black
                       opacity-(--scroll-opacity) duration-300 ease-linear'/>
       <div className='relative h-[calc(100%+220px)]
                       w-[calc(100%+520px)] bg-black'>
-        <video ref={video} src="hero.mp4"
+        <video ref={video} src="placeholder.mp4"
                className='absolute w-full h-full
                           -top-[110px] -left-[260px] object-cover'
                autoPlay muted loop playsInline/>
       </div>
+
     </div>
   </section>
 );

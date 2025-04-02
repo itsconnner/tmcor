@@ -1,5 +1,3 @@
-# SPDX-License-Identifier: GPL-3.0-or-later
-
 FROM node:20-alpine AS development-dependencies-env
 COPY . /app
 WORKDIR /app

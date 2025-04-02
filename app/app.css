@@ -1,13 +1,9 @@
-/* SPDX-License-Identifier: GPL-3.0-or-later */
-/*
- * Copyright 2025 Yeyang Wang <autumnlikegirl@gmail.com>
- */
 
 @import "tailwindcss";
 
 @theme {
   --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif,
-    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 /*      ╭──────────────────────────────────────────────────────────╮      */
 /*                              fonts                                   */
@@ -67,6 +63,25 @@ body {
 }
 
 body {
-	overflow-x: hidden;
+  overflow-x: hidden;
 }
+
+/*@tailwind base;*/
+/*@tailwind components;*/
+/*@tailwind utilities;*/
+
+/*@layer utilities {*/
+/*  @keyframes scroll {*/
+/*    from {*/
+/*      transform: translateX(0);*/
+/*    }*/
+/*    to {*/
+/*      transform: translateX(-200%);*/
+/*    }*/
+/*  }*/
+
+/*  .animate-scroll {*/
+/*    @apply animate-[scroll_10s_linear_infinite];*/
+/*  }*/
+/*}*/
 
